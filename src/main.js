@@ -7,6 +7,7 @@ const studentName = document.querySelector("#studentName");
 
 const generateStudentName = () => {
   studentName.textContent = data[getRandomInt(0, data.length - 1)].name;
+  studentName.classList.remove("animate-bounce");
 };
 
 button.addEventListener("click", generateStudentName);
