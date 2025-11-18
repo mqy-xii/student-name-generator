@@ -18,13 +18,11 @@ const darkModeRadio = document.getElementById("dark");
 const lightModeRadio = document.getElementById("light");
 
 darkModeRadio.addEventListener("change", () => {
-  console.log("Dark mode");
   document.body.classList.remove("bg-gray-100");
   document.body.classList.add("bg-gray-700", "text-white");
 });
 
 lightModeRadio.addEventListener("change", () => {
-  console.log("Light mode");
   document.body.classList.remove("bg-gray-700", "text-white");
   document.body.classList.add("bg-gray-100");
 });
